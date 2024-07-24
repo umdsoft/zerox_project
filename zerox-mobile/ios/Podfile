@@ -1,0 +1,57 @@
+require_relative '../node_modules/react-native/scripts/react_native_pods'
+require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
+require_relative '../node_modules/react-native-permissions/scripts/setup'
+
+$RNFirebaseAsStaticFramework = true
+platform :ios, '12.4'
+install! 'cocoapods', :deterministic_uuids => false
+
+
+target 'zerox' do
+  use_frameworks! :linkage => :static
+  # use_frameworks!
+  config = use_native_modules!
+
+  # Flags change depending on the env values.
+  flags = get_default_flags()
+
+  use_react_native!(
+    :path => config[:reactNativePath],
+    # to enable hermes on iOS, change `false` to `true` and then install pods
+    :hermes_enabled => false,
+    :fabric_enabled => flags[:fabric_enabled],
+    # An absolute path to your application root.
+    :app_path => "#{Pod::Config.instance.installation_root}/.."
+  )
+ 
+  
+
+  #  pod 'GoogleMLKit/FaceDetection', '2.6.0'
+  #  pod 'GoogleMLKit/TextRecognition', '2.6.0'
+  #  pod 'Alamofire'
+  #  pod 'MBProgressHUD', '~> 1.2.0'
+   pod 'React-RCTText', :path => '../node_modules/react-native/Libraries/Text', :modular_headers => true
+   
+
+  # Enables Flipper.
+  #
+  # Note that if you have use_frameworks! enabled, Flipper will not work and
+  # you should disable the next line.
+  # use_flipper!({ 'Flipper' => '0.131.1', 'Flipper-Folly' => '2.6.10', 'Flipper-RSocket' => '1.4.3', 'Flipper-DoubleConversion' => '3.1.7', 'Flipper-PeerTalk' => '0.0.4', 'OpenSSL-Universal' => '1.1.1100' })
+  # pre_install do |installer|
+  #       installer.pod_targets.each do |pod|
+  #         if pod.name.eql?('react-native-mmkv')
+  #           def pod.build_type;
+  #             Pod::BuildType.static_library
+  #           end
+  #         end
+  #       end
+  #  end
+
+  # pod 'RNReactNativeHtmlToBase64image', :path => '../node_modules/react-native-html-to-base64image'
+
+  post_install do |installer|
+   react_native_post_install(installer)
+        __apply_Xcode_12_5_M1_post_install_workaround(installer)
+  end
+end

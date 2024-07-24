@@ -1,0 +1,52 @@
+{
+    "creditor": {
+        "data": [],
+        "expired": [],
+        "five": []
+    },
+    "debitor": {
+        "data": [],
+        "expired": [],
+        "five": []
+    },
+    "profile": {
+        "address": "САНОАТ ҚФЙ, БОҒДОР МФЙ,  uy:Р/С",
+        "balance": 122465,
+        "brithday": "28.03.1994",
+        "citizenship": "УЗБЕКИСТАН",
+        "cnt": 0,
+        "code": 58936,
+        "company": null,
+        "con_time": "01:04:09",
+        "contract_date": "2023-07-30T20:04:09.000Z",
+        "created_at": "2023-07-30T20:02:03.000Z",
+        "director": null,
+        "district": "ХАЗОРАСП ТУМАНИ",
+        "expiry_date": "2033-07-08T19:00:00.000Z",
+        "first_name": "BUNYODBEK",
+        "gender": 1,
+        "id": 103,
+        "is_active": 1,
+        "is_contract": 1,
+        "issued_by": "ХАЗАРАСПСКИЙ РОВД ХОРЕЗМСКОЙ ОБЛАСТИ",
+        "issued_date": "2023-07-09T19:00:00.000Z",
+        "last_name": "BOLTAYEV",
+        "middle_name": "JUMABOYEVICH",
+        "nationality": "УЗБЕК/УЗБЕЧКА",
+        "passport": "AD3885112",
+        "password": "$2a$12$ppytzlJWUf/9p64cQ.q7IeahxAAQuE0LZqnX305CGTBvMY117aiq6",
+        "phone": "+998977345030",
+        "pinfl": "32803943110039",
+        "question": null,
+        "rating": 0,
+        "rating_type": 2,
+        "region": "ХОРАЗМ ВИЛОЯТИ",
+        "role": 1,
+        "rtf_token": "eKs_Xr_sS_KfRtlAWQV5HT:APA91bFxf_5mnp0rNbUyrBo3QO6i1XDPddVSEf2blSQU2hCCv8nlICZlaa48hj8ruxCaElnynoQTY3yyYVoeTUVVZFDIMZWOf5TKWuapdssrJHGBBmgV-Hy0zsyWha5vInZhQuEYGgyB",
+        "secret": null,
+        "stir": null,
+        "type": 2,
+        "uid": "100008AA",
+        "updated_at": "2024-06-21T19:55:47.000Z"
+    }
+}

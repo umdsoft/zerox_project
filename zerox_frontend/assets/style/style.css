@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+.container {
+  max-width: 1330px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+
+@media(max-width: 700px) {
+  .container {
+    max-width: 100% !important;
+  }
+
+  .media-close {
+    display: none;
+  }
+}
+
+
+
+
+.content-admin {
+  overflow: hidden;
+  position: relative;
+  background-color: #f3f5f8;
+  margin-left: 240px;
+  margin-top: 60px;
+  min-height: calc(100vh - 60px);
+  padding: 20px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+body {
+  background: #F7FAFC;
+  ;
+}
+
+div.bg-bluee {
+  background: linear-gradient(180deg,
+      rgba(255, 246, 240, 0.152) 0%,
+      rgba(251, 232, 233, 0.124) 57.44%,
+      rgba(252, 252, 255, 0.228) 100%);
+  mix-blend-mode: normal;
+}
+  .nuxt-link-exact-active  {
+    display: block;
+    border-radius: 10px;
+  }
+
+
+.nuxt-link-exact-active > .nav-wrapper > .icon {
+  font-weight: bold;
+  background-color: #3182CE;
+
+}
+
+.nuxt-link-exact-active > .nav-wrapper > .icon > svg > path {
+  fill: white;
+}
+
+.nuxt-link-exact-active > .nav-wrapper > .icon > svg path  {
+  fill: white;
+
+}
+
+
+
+
+
+
+
+
+

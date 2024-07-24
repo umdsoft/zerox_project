@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "94870445358",
+    "project_id": "zerox-c073b",
+    "storage_bucket": "zerox-c073b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:94870445358:android:4b3e114806b5d72d1f6ebf",
+        "android_client_info": {
+          "package_name": "com.zerox"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "94870445358-o8812h7es0e6fe28dn1htvqbfeju6n6l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.zerox",
+            "certificate_hash": "d291e52ff546f220f55fe9b4d3cf52556ff14e8d"
+          }
+        },
+        {
+          "client_id": "94870445358-q35p3samt77up8j51b4q76kisehb9tp4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCTMl7hWDitSjFUkKD1XtjFpc_rVj09f1Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "94870445358-q35p3samt77up8j51b4q76kisehb9tp4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
